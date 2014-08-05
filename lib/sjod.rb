@@ -1,5 +1,4 @@
-require "sjod/version"
+require 'sjod/client'
 
-module Sjod
-  # Your code goes here...
+module SJOD
 end
