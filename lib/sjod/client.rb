@@ -3,7 +3,7 @@ require 'httparty'
 # Anything to do with providing a client object
 #
 # @author Tyler Hampton
-# @since 0.0.1
+# @since 0.1.1
 module SJOD
   class Client
     include HTTParty
