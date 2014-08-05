@@ -5,7 +5,7 @@ require 'sjod/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sjod"
-  spec.version       = Sjod::VERSION
+  spec.version       = SJOD::VERSION
   spec.authors       = ["howdoicomputer"]
   spec.email         = ["tyler@insidevault.com"]
   spec.summary       = %q{An API wrapper for the San Jose open data initiative.}
