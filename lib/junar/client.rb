@@ -4,7 +4,7 @@ require 'httparty'
 #
 # @author Tyler Hampton
 # @since 0.1.1
-module SJOD
+module Junar
   class Client
     include HTTParty
     attr_reader :token
@@ -15,7 +15,7 @@ module SJOD
     # @param [Hash] opts
     #   @option opts [String] :token Manually load the API token
     #
-    # @return [SJOD::Client] An API handle object for doing CRUD operations
+    # @return [Junar::Client] An API handle object for doing CRUD operations
     def initialize(opts={})
       @token = opts[:token]
       @uri = opts[:uri]
