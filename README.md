@@ -1,4 +1,4 @@
-sjod
+junar
 ====
 
-SJOD is an API wrapper for the San Jose Open Data API.
+Junar is an API wrapper for the San Jose Open Data API.

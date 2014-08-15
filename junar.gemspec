@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sjod/version'
+require 'junar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sjod"
-  spec.version       = SJOD::VERSION
+  spec.name          = "junar"
+  spec.version       = Junar::VERSION
   spec.authors       = ["howdoicomputer"]
   spec.email         = ["tyler@insidevault.com"]
   spec.summary       = %q{An API wrapper for the San Jose open data initiative.}
   spec.description   = %q{Not endorsed by the city of San Jose.}
-  spec.homepage      = "https://github.com/howdoicomputer/sjod"
+  spec.homepage      = "https://github.com/howdoicomputer/junar"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

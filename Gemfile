@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in sjod.gemspec
+# Specify your gem's dependencies in junar.gemspec
 gemspec
 
 # There is a deprecation in the published safe_yaml gem that prompts an error message during rspec tests. This is a temporary workaround.
