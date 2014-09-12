@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/howdoicomputer/junar.svg?branch=master)](https://travis-ci.org/howdoicomputer/junar)
+[![Code Climate](https://codeclimate.com/github/howdoicomputer/junar/badges/gpa.svg)](https://codeclimate.com/github/howdoicomputer/junar)
+
 junar
 ====
 
