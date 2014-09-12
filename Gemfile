@@ -14,7 +14,7 @@ group :doc do
 end
 
 group :test do
-  gem "codeclimate-test-reporter"
+  gem "codeclimate-test-reporter", require: nil
   gem 'rspec'
   gem 'rspec-mocks'
   gem 'vcr'
