@@ -12,7 +12,17 @@ Until the gem is released
 
 ### Documentation
 
-The git wiki should be up to date and contain all that is needed to learn how to use this gem.
+The git wiki should be up to date and contain all that is needed. 
+
+Yardoc support is available as well.
+
+    yard
+
+The above command will generate a doc directory filled with static content.
+
+    yard server
+
+Yard can serve up the static content on port 8808 for browsing.
 
 ### Authentication
 
