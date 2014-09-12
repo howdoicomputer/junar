@@ -6,7 +6,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ''
-    headers: {}
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
@@ -15,7 +19,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Fri, 12 Sep 2014 07:10:56 GMT
+      - Fri, 12 Sep 2014 20:27:26 GMT
       Server:
       - nginx/1.2.3
       Vary:
@@ -27,11 +31,11 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: '[{"description": "Fire Department budget information since 2007.",
+      encoding: US-ASCII
+      string: ! '[{"description": "Fire Department budget information since 2007.",
         "tags": ["san jose", "City of San Jose", "Budget", "fire"], "created_at":
         "1386019750", "title": "Fire Department", "link": "http://data.sanjoseca.gov/dashboards/8514/fire-department/",
         "id": "FIRE-DEPAR"}]'
     http_version: 
-  recorded_at: Fri, 12 Sep 2014 07:11:05 GMT
+  recorded_at: Fri, 12 Sep 2014 20:27:31 GMT
 recorded_with: VCR 2.9.3
