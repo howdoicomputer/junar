@@ -3,6 +3,9 @@ cache: bundler
 rvm: 
   - 2.1.2
 
+addons:
+  code_climate:
+    repo_token: 91546920bf36632303e493e4c08718c65dd21ccb2a14d245c4c00fb3a890630d
+
 script:
   - bundle exec rspec spec
-  - export CODECLIMATE_REPO_TOKEN=91546920bf36632303e493e4c08718c65dd21ccb2a14d245c4c00fb3a890630d 
