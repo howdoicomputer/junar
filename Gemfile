@@ -7,7 +7,11 @@ gemspec
 gem 'safe_yaml', git: 'https://github.com/dtao/safe_yaml.git'
 gem 'hashie'
 gem 'httparty'
-gem 'rspec'
-gem 'rspec-mocks'
-gem 'webmock'
 gem 'yard'
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-mocks'
+  gem 'vcr'
+  gem 'webmock'
+end
