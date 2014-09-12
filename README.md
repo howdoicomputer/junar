@@ -46,7 +46,7 @@ Note, the Junar API is just awful. Prepare for timed out connections, bad reques
 Constructing a client object is fairly straight forward.
 
 ```ruby
-client = Junar::Client.new ({
+junar = Junar::Client.new ({
   token: your_token_here,
   uri: 'http://api.data.sanjoseca.gov'
 }) 
@@ -61,8 +61,8 @@ Usage is fairly simple at this early stage of development. The only functionalit
 #### Search
 
 ```ruby
-client.search category: 'datastreams', query: 'FIRE'
-client.search category: 'dashboards', query: 'FIRE'
+junar.search category: 'datastreams', query: 'FIRE'
+junar.search category: 'dashboards', query: 'FIRE'
 ```
 
 As functionality expands, it's always good to check out the unit tests to see more examples.
