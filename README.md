@@ -60,4 +60,4 @@ As functionality expands, it's always good to check out the unit tests to see mo
 
 ### Support
 
-This wrapper supports Junar API v1.0 and is tested using Ruby 2.1.1. I have no plans to support 1.9.X version of Ruby.
+This wrapper supports Junar API v1.0 and is tested using Ruby 2.1.1. I have no plans to support the 1.9.X version of Ruby.
