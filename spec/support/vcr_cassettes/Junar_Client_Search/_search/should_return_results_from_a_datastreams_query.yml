@@ -7,8 +7,10 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -19,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Fri, 12 Sep 2014 20:27:21 GMT
+      - Fri, 12 Sep 2014 21:49:56 GMT
       Server:
       - nginx/1.2.3
       Vary:
@@ -27,12 +29,12 @@ http_interactions:
       X-Ua-Compatible:
       - IE=edge
       Content-Length:
-      - '650'
+      - '325'
       Connection:
       - keep-alive
     body:
-      encoding: US-ASCII
-      string: ! '[{"description": "Fire Department Data for instances from July 2012
+      encoding: UTF-8
+      string: '[{"description": "Fire Department Data for instances from July 2012
         to February 2014.", "tags": ["Fire Departmet", "fire", "SJFD", "san jose",
         "City of San Jose"], "created_at": "1398974550", "title": "Fire Data", "link":
         "http://data.sanjoseca.gov/datastreams/82557/fire-data/", "id": "FIRE-DATA"},
@@ -42,5 +44,5 @@ http_interactions:
         Budget", "link": "http://data.sanjoseca.gov/datastreams/79981/fire-department-budget/",
         "id": "FIRE-DEPAR-BUDGE"}]'
     http_version: 
-  recorded_at: Fri, 12 Sep 2014 20:27:31 GMT
+  recorded_at: Fri, 12 Sep 2014 21:50:01 GMT
 recorded_with: VCR 2.9.3
