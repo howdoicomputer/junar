@@ -39,7 +39,7 @@ http://data.sanjoseca.gov/developers/
 
     rspec spec
 
-Note, the Junar API is just awful. Prepare for timed out connections, bad request errors, etc. The builds will fail often because of this. I am depending heavily on caching to side-step this problem. I am planning on introducing more graceful failures and better mocking in the future to help with the dependendability of testing.
+Note, the Junar API does have some failure rates. I am depending heavily on caching to side-step this problem and am communicating with the Junar folks to help them identify some of the problems. I am planning on introducing more graceful failures and better mocking in the future to help with the dependendability of testing.
 
 ### Setup 
 
@@ -66,6 +66,12 @@ junar.search category: 'dashboards', query: 'FIRE'
 ```
 
 As functionality expands, it's always good to check out the unit tests to see more examples.
+
+### Roadmap
+
+* Turn the data structure returned by the API into a easily manipulatable objects
+* Be able to return either a datastream or a dashboard as that object
+* Generate CSV files and the like
 
 ### Support
 
