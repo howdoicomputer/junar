@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.data.sanjoseca.gov/datastreams/search?auth_key=d759b5b71ce13ac5e74bfa466a5caf033a1c5931&limit=&query=FIRE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 12 Sep 2014 07:10:48 GMT
+      Server:
+      - nginx/1.2.3
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      Content-Length:
+      - '650'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"description": "Fire Department Data for instances from July 2012
+        to February 2014.", "tags": ["Fire Departmet", "fire", "SJFD", "san jose",
+        "City of San Jose"], "created_at": "1398974550", "title": "Fire Data", "link":
+        "http://data.sanjoseca.gov/datastreams/82557/fire-data/", "id": "FIRE-DATA"},
+        {"description": "Fire Department Capital and Operating Budgets from 2007 to
+        2013.", "tags": ["san jose", "City of San Jose", "Budget", "Capital Budget",
+        "Operating Budget", "fire"], "created_at": "1393958429", "title": "Fire Department
+        Budget", "link": "http://data.sanjoseca.gov/datastreams/79981/fire-department-budget/",
+        "id": "FIRE-DEPAR-BUDGE"}]'
+    http_version: 
+  recorded_at: Fri, 12 Sep 2014 07:10:57 GMT
+recorded_with: VCR 2.9.3
