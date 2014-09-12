@@ -7,7 +7,11 @@ gemspec
 gem 'safe_yaml', git: 'https://github.com/dtao/safe_yaml.git'
 gem 'hashie'
 gem 'httparty'
-gem 'yard'
+
+group :doc do
+  gem 'redcarpet'
+  gem 'yard'
+end
 
 group :test do
   gem 'rspec'
