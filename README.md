@@ -1,7 +1,7 @@
 junar
 ====
 
-Junar is an API wrapper for any government data platform that is built using Junar
+Junar is an API wrapper for any government data platform that was built using the Junar open data solution.
 
 ### Installation
 
@@ -30,7 +30,7 @@ You can obtain an API token from any of the city owned and Junar built open data
 
 The San Jose registration page, for example: 
 
-[register]: http://data.sanjoseca.gov/developers/
+http://data.sanjoseca.gov/developers/
 
 ### Setup 
 
@@ -38,7 +38,7 @@ Constructing a client object is fairly straight forward.
 
 ```ruby
 client = Junar::Client.new ({
-  token: "#{your_token_here}",
+  token: your_token_here,
   uri: 'http://api.data.sanjoseca.gov'
 }) 
 ```
@@ -49,6 +49,8 @@ You can then make requests using this object.
 
 Usage is fairly simple at this early stage of development. The only functionality that is available is searching.
 
+#### Search
+
 ```ruby
 client.search category: 'datastreams', query: 'FIRE'
 client.search category: 'dashboards', query: 'FIRE'
@@ -58,4 +60,4 @@ As functionality expands, it's always good to check out the unit tests to see mo
 
 ### Support
 
-This wrapper supports Junar API v1.0.
+This wrapper supports Junar API v1.0 and is tested using Ruby 2.1.1. I have no plans to support 1.9.X version of Ruby.
