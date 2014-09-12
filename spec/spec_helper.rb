@@ -14,9 +14,21 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require 'vcr'
+
+VCR.configure do |c|
+  c.hook_into :webmock
+  c.cassette_library_dir = 'spec/support/vcr_cassettes'
+  c.configure_rspec_metadata!
+  c.allow_http_connections_when_no_cassette = true
+  c.default_cassette_options = {:record => :new_episodes} 
+end
+
 RSpec.configure do |config|
+  require 'pp'
   require 'junar'
-  require 'webmock/rspec'
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
