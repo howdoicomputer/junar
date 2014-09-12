@@ -33,6 +33,3 @@ Gemfile.lock
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
-
-# Cached HTTP responses for unit testing
-/spec/support
