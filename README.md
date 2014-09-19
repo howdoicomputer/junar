@@ -39,7 +39,7 @@ http://data.sanjoseca.gov/developers/
 
     rspec spec
 
-Note, the Junar API does have some failure rates. I am depending heavily on caching to side-step this problem and am communicating with the Junar folks to help them identify some of the problems. I am planning on introducing more graceful failures and better mocking in the future to help with the dependendability of testing.
+Note, the Junar API does have some failures. I am depending heavily on caching to side-step this problem and am communicating with the Junar folks to help them identify some of the problems. I am planning on introducing more graceful failures and better mocking in the future to help with the dependendability of testing.
 
 ### Setup 
 
@@ -56,13 +56,18 @@ You can then make requests using this object.
 
 ### Usage
 
-Usage is fairly simple at this early stage of development. The only functionality that is available is searching.
+Usage is fairly simple at this early stage of development. There are two resources, 'datastreams' and 'dashboards'. The method chains work similar to how the routes are constructed.
+
+```ruby
+junar.datastream.<resource action>
+junar.dashboard.<resource action>
+```
 
 #### Search
 
 ```ruby
-junar.search category: 'datastreams', query: 'FIRE'
-junar.search category: 'dashboards', query: 'FIRE'
+junar.datastream.search query: 'FIRE'
+junar.dashboard.search query: 'FIRE'
 ```
 
 As functionality expands, it's always good to check out the unit tests to see more examples.
@@ -75,4 +80,4 @@ As functionality expands, it's always good to check out the unit tests to see mo
 
 ### Support
 
-This wrapper supports Junar API v1.0 and is tested using Ruby 2.1.1. I have no plans to support the 1.9.X version of Ruby.
+This wrapper supports Junar API v1.0 and is tested using Ruby 2.1.3. I have no plans to support the 1.9.X version set of Ruby... but feel free to do a pull request and test it against that version.
