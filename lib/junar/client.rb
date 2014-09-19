@@ -1,5 +1,4 @@
 require 'httparty'
-require 'junar/search'
 
 # Anything to do with providing a client object
 #
@@ -8,7 +7,6 @@ require 'junar/search'
 module Junar
   class Client
     include HTTParty
-    include Search
 
     attr_reader :token
     attr_reader :uri
