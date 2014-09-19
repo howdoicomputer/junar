@@ -1,3 +1,9 @@
+### 0.3.2 (unreleased)
+
+  - restructured how search worked
+  - datastream method chain
+  - dashboard method chain
+
 ### 0.2.2 (unreleased)
 
 Features:
