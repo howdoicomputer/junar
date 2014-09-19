@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.data.sanjoseca.gov//search?auth_key=d759b5b71ce13ac5e74bfa466a5caf033a1c5931&limit=&query=FIRE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Content-Type:
+      - text/html
+      Date:
+      - Wed, 17 Sep 2014 01:27:17 GMT
+      Server:
+      - nginx/1.2.3
+      Content-Length:
+      - '172'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502
+        Bad Gateway</h1></center>\r\n<hr><center>nginx/1.2.0</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Wed, 17 Sep 2014 01:27:26 GMT
+recorded_with: VCR 2.9.3

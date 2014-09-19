@@ -1,4 +1,4 @@
-describe Junar::Client::Search do
+describe Junar::Search do
   before(:each) do
     @client = Junar::Client.new ({
       token: 'd759b5b71ce13ac5e74bfa466a5caf033a1c5931',

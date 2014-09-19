@@ -1,4 +1,4 @@
-describe Junar do
+describe Junar::Client do
   before(:each) do
     @client = Junar::Client.new ({
       token: 'e60e3ec6c2d32969a95127968f03412f69f9b61c',
@@ -15,6 +15,6 @@ describe Junar do
   end
 
   describe '.uri' do
-    it { expect(@client.uri). to be_a(String) }
+    it { expect(@client.uri).to be_a(String) }
   end
 end
